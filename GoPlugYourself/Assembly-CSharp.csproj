@@ -54,7 +54,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CharacterController.cs" />
+     <Compile Include="Assets\Scripts\PlugController.cs" />
+     <Compile Include="Assets\Scripts\PlugGenerator.cs" />
      <Compile Include="Assets\Scripts\WireController.cs" />
+     <Compile Include="Assets\Scripts\WireGenerator.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/George/Desktop/EC Game Jam 4/ExtraCreditsGameJam4Submission/GoPlugYourself/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
