@@ -31,10 +31,13 @@ public class PlugController : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             rb2d.MoveRotation(rb2d.rotation + rotateSpeed * Time.deltaTime);
+            //rb2d.AddForce(-transform.right*rotateSpeed);
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
             rb2d.MoveRotation(rb2d.rotation - rotateSpeed * Time.deltaTime);
+            //rb2d.AddForce(transform.right * rotateSpeed);
+
         }
     }
 }
