@@ -57,8 +57,10 @@
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\PlugController.cs" />
      <Compile Include="Assets\Scripts\PlugGenerator.cs" />
+     <Compile Include="Assets\Scripts\SocketHoleController.cs" />
      <Compile Include="Assets\Scripts\WireController.cs" />
      <Compile Include="Assets\Scripts\WireGenerator.cs" />
+     <Compile Include="Assets\Scripts\WireSegmentChecker.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

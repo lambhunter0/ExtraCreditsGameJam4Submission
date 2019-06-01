@@ -26,18 +26,24 @@ public class PlugController : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            rb2d.AddForce(-transform.up*moveSpeed);
+            rb2d.AddForce(-transform.up*(moveSpeed/1.5f));
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            rb2d.MoveRotation(rb2d.rotation + rotateSpeed * Time.deltaTime);
+            rb2d.MoveRotation(rb2d.rotation + rotateSpeed * Time.deltaTime * 2.0f);
             //rb2d.AddForce(-transform.right*rotateSpeed);
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            rb2d.MoveRotation(rb2d.rotation - rotateSpeed * Time.deltaTime);
+            rb2d.MoveRotation(rb2d.rotation - rotateSpeed * Time.deltaTime * 2.0f);
             //rb2d.AddForce(transform.right * rotateSpeed);
 
         }
+    }
+
+    public void LockMovement()
+    {
+        rb2d.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+        //level won
     }
 }

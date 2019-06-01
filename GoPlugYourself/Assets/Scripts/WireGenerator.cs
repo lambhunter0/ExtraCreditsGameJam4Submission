@@ -20,6 +20,8 @@ public class WireGenerator : MonoBehaviour
         for (int i = 0; i < length; i++)
         {
             GameObject segment = Instantiate(wireSegment, transform);
+            segment.GetComponent<WireSegmentChecker>().index = i;
+            segment.GetComponent<WireSegmentChecker>().maxIndex = length;
             HingeJoint2D connector = segment.GetComponent<HingeJoint2D>();
             connector.connectedBody = previous;
 
