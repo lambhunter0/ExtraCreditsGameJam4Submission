@@ -11,7 +11,7 @@ public class PlugController : MonoBehaviour
     {
         isDead = false;
         rb2d = this.GetComponent<Rigidbody2D>();
-        rotateSpeed = 100.0f;
+        rotateSpeed = 50.0f;
         moveSpeed = 500.0f;
     }
 
@@ -49,6 +49,5 @@ public class PlugController : MonoBehaviour
     public void LockMovement()
     {
         rb2d.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
-        //level won
     }
 }

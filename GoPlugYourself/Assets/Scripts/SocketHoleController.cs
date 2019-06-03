@@ -1,16 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SocketHoleController : MonoBehaviour
 {
+    public Countdown timer;
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("GG");
             //win the level
+            timer.isPaused = true;
             collision.gameObject.GetComponent<PlugController>().LockMovement();
+            timer.winLoseManager.won = true;
         }
     }
 }

@@ -13,7 +13,12 @@ public class MainMenu : MonoBehaviour
 
     public void ClickPlay()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+        SceneManager.LoadScene(1);
+    }
+
+    public void ClickFreePlay()
+    {
+        SceneManager.LoadScene(2);
     }
 
     public void ClickOptions()
