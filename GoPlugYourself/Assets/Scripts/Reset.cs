@@ -8,4 +8,9 @@ public class Reset : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void ClickBackToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

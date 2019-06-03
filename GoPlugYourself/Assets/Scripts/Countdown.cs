@@ -10,7 +10,7 @@ public class Countdown : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startingTime = 2.0f;
+        startingTime = 25.0f;
         timerTime = startingTime;
     }
 
