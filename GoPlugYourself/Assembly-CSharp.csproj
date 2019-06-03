@@ -54,9 +54,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CharacterController.cs" />
+     <Compile Include="Assets\Scripts\Countdown.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\PlugController.cs" />
      <Compile Include="Assets\Scripts\PlugGenerator.cs" />
+     <Compile Include="Assets\Scripts\Reset.cs" />
      <Compile Include="Assets\Scripts\SocketHoleController.cs" />
      <Compile Include="Assets\Scripts\WireController.cs" />
      <Compile Include="Assets\Scripts\WireGenerator.cs" />

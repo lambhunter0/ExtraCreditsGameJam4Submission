@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3702049193251195407}
   - component: {fileID: 1218822004791516004}
   - component: {fileID: 5892859052970941971}
+  - component: {fileID: 270598657141383056}
+  - component: {fileID: 4041275461580921331}
   m_Layer: 0
   m_Name: WireSegmentGravity
   m_TagString: Untagged
@@ -126,3 +128,44 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 90
+--- !u!114 &270598657141383056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6831191946848595788}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9b5b3715c6212d4eace347116e5c013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  segment: {fileID: 4041275461580921331}
+  index: 0
+  maxIndex: 0
+--- !u!61 &4041275461580921331
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6831191946848595788}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.24, y: 2.24}
+    newSize: {x: 2.24, y: 2.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.24, y: 2.24}
+  m_EdgeRadius: 0
